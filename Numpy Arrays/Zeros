@@ -1,0 +1,14 @@
+The numpy.zeros() function returns a new array of given shape and type, with zeros.
+
+numpy.zeros(shape, dtype = None, order = 'C')
+
+shape : integer or sequence of integers
+order  : C_contiguous or F_contiguous
+         C-contiguous order in memory(last index varies the fastest)
+         C order means that operating row-rise on the array will be slightly quicker
+         FORTRAN-contiguous order in memory (first index varies the fastest).
+         F order means that column-wise operations will be faster.
+dtype : [optional, float(byDeafult)] Data type of returned array.
+
+ndarray of zeros having given shape, order and datatype.
+

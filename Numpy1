@@ -1,0 +1,31 @@
+NumPy is a general-purpose array-processing Python library which provides handy methods/functions for working n-dimensional arrays. NumPy is a short form for “Numerical Python“. It provides various computing tools such as comprehensive mathematical functions, and linear algebra routines.
+
+umPy has various features including these important ones:
+
+A powerful N-dimensional array object
+Sophisticated (broadcasting) functions
+Tools for integrating C/C++ and Fortran code
+Useful linear algebra, Fourier transform, and random number capabilities
+
+NumPy&#x2019s main object is the homogeneous multidimensional array.
+
+It is a table of elements (usually numbers), all of the same type, indexed by a tuple of positive integers.
+In NumPy, dimensions are called axes. The number of axes is rank.
+NumPy&#x2019s array class is called ndarray. It is also known by the alias array.
+
+a two-dimensional array that has the rank of 2 as it has 2 axes.
+The first axis(dimension) is of length 2, i.e., the number of rows, and the second axis(dimension) is of length 3, i.e., the number of columns.
+The overall shape of the array can be represented as (2, 3)
+
+Array in Numpy is a table of elements (usually numbers), all of the same type, indexed by a tuple of positive integers.
+
+n Numpy, number of dimensions of the array is called rank of the array.
+A tuple of integers giving the size of the array along each dimension is known as shape of the array.
+
+An array class in Numpy is called as ndarray. Elements in Numpy arrays are accessed by using square brackets and can be initialized by using nested Python Lists.
+
+Arrays in Numpy can be created by multiple ways, with various number of Ranks, defining the size of the Array. Arrays can also be created with the use of various data types such as lists, tuples, etc. The type of the resultant array is deduced from the type of the elements in the sequences.
+
+Accessing the array Index
+In a numpy array, indexing or accessing the array index can be done in multiple ways. To print a range of an array, slicing is done.
+Slicing of an array is defining a range in a new array which is used to print a range of elements from the original array. Since, sliced array holds a range of elements of the original array, modifying content with the help of sliced array modifies the original array content.
