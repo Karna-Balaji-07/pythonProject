@@ -1,0 +1,168 @@
+NumPy array creation :
+
+
+Arrays creation using lists : Arrays are used to store multiple values in single variables. Python don’t have built in support for arrays so python lists can be used.
+
+Array  creation using Numpy methods : Numpy offers several functions to create arrays with initial placeholder. These minimize the necessity of growing arrays which is an expensive operation
+
+We need to import numpy library inorder to create arrays or do operations with it.
+
+§1. Numpy.empty(shape, dtype,order='C ) : returns a new array with the given shape and dtype of random values.
+
+import numpy as np
+arr1 = np.empty(2,dtype=int)
+arr2 = np.empty([3,4],dtype=int)
+arr3 = np.empty([3,3],dtype=float)
+
+print(arr1,end="\n")
+print(arr2,end="\n")
+print(arr3,end="\n")
+
+§2. Numpy.zeros(shape,dtype=None,order='C) : returns a new array of the given shape with zeros as it values.  Dtype will be float by default
+
+arr4 = np.zeros(2)
+arr5 = np.zeros([3,4])
+arr6 = np.zeros([4,4])
+
+print(arr4,end="\n\n")
+print(arr5,end="\n\n")
+print(arr6,end="\n\n")
+
+§3. To create a sequence of numbers, numpy provides a function analogous to range that returns array instead of lists.
+
+Arange returns evenly spaced values with given interval. Step size is specified.
+Linespace returns evenly spaced values within a given interval. Num no. of elements are returned.
+
+..arange[start,stop,step,dtype] : returns an array with evenly spaced elements as per the interval.  The interval mentioned is half-opened i.e. [Start, Stop)
+start : [optional] start of interval range. By default start = 0
+stop  : end of interval range
+step  : [optional] step size of interval. By default step size = 1,
+For any output out, this is the distance between two adjacent values, out[i+1] - out[i].
+dtype : type of output array
+
+
+import numpy as np
+arr7 = np.arange(2,11,2)
+arr8 = np.arange(1,7)
+arr9 = np.arange(1,20,3,dtype=float)
+print(arr7,end="\n\n")
+print(arr8,end="\n\n")
+print(arr9,end="\n\n")
+
+
+import numpy as np
+arr10 = np.linspace(1,10,2,retstep=True)
+print(arr10,end="\n\n")
+arr11 = np.linspace(1,20,5,retstep=True)
+print(arr11,end="\n\n")
+
+
+§4. We can use reshape method to reshape an array.
+Consider an array with shape (a1, a2, a3, …, aN). We can reshape and convert it into another array with shape (b1, b2, b3, …, bM).
+The only required condition is: a1 x a2 x a3 … x aN = b1 x b2 x b3 … x bM . (i.e original size of array remains unchanged.)
+
+numpy.reshape(array, shape, order = ‘C’) : Shapes an array without changing data of array.
+
+
+import numpy as np
+arr12 = np.arange(8).reshape(2,4)
+arr13 = np.arange(12).reshape(4,3)
+print(arr12,end="\n\n")
+print(arr13,end="\n\n")
+
+
+§5. We can use flatten method to get a copy of an array collapsed in one dimension. It accepts order argument. Default value is 'C' for row-major order. 'F' is for column major order.
+
+import numpy as np
+arr14 = np.array(([2,4],[5,6]))
+print(arr14,end="\n\n")
+print("Flatten by row wise")
+print(arr14.flatten(),end="\n\n")
+print("Flatten by column wise")
+print(arr14.flatten('F'),end="\n\n")
+
+
+§6. We can use numpy.ones() to create an array with ones as its elements. This method
+shape : integer or sequence of integers
+order  : C_contiguous or F_contiguous
+         C-contiguous order in memory(last index varies the fastest)
+         C order means that operating row-rise on the array will be slightly quicker
+         FORTRAN-contiguous order in memory (first index varies the fastest).
+         F order means that column-wise operations will be faster.
+dtype : [optional, float(byDefault)] Data type of returned array.
+
+import numpy as np
+arr15 = np.ones(2,dtype=int)
+arr16= np.ones([3,3],dtype=float)
+print("ones method that returns an array filled with ones")
+print(arr15,end="\n\n")
+print(arr16,end="\n\n")
+
+§7 . Numpy.eye(R, C=None, k=0, dtype) : The eye tool returns a 2d array with 1's as its diagonals and 0's elsewhere. The diagonal can be upper, lower or main depending on the optional parameter k. Positive k is for upper diagonal, negative k is for lower diagonal and default 0 is for main.
+R : Number of rows
+C : [optional] Number of columns; By default M = N
+k : [int, optional, 0 by default]
+          Diagonal we require; k>0 means diagonal above main diagonal or vice versa.
+dtype : [optional, float(by Default)] Data type of returned array.
+
+Returns an array of shape, R x C, an array where all elements
+are equal to zero, except for the k-th diagonal,
+whose values are equal to one.
+
+import numpy as np
+arr17 = np.eye(2,dtype=int)
+print(arr17,end="\n\n")
+arr18 = np.eye(4,4,k=1,dtype=int)
+print(arr18,end="\n\n")
+arr19 = np.eye(4,4,k=-1,dtype=int)
+print(arr19,end="\n\n")
+arr20 = np.eye(4,4,k=0,dtype=int)
+print(arr20,end="\n\n")
+
+
+§7. The One-dimensional array contains elements only in one dimension. In other words, the shape of the NumPy array should contain only one value in the tuple
+
+In NumPy, you can create a 1-D array using the “array” function, which converts a Python list or iterable object. First, make a list then pass it in Numpy.array()
+
+Random() return the random module provides various methods to create arrays filled with random values.
+
+the numpy.full() function. The full() function in NumPy creates an array of a given shape and fills it with a specified value.
+ A full NumPy array is an array where all the elements have the same predefined value. This is useful when you want to initialize an array with a specific value.
+
+
+
+
+Vectors using arrays :
+
+import numpy as np
+
+list1 = [1,2,3,4,5]
+list2 = [[11],[22],[33]]
+print("Horizontal array")
+print(np.array(list1))
+print("Vertical array")
+print(np.array(list2))
+
+
+print("Basic Arithmetic Operations : ")
+list3 = [1,2,3,4,5]
+list4 = [9,8,7,6,5]
+a = np.array(list3)
+b = np.array(list4)
+print(f'Vector 1 : {a}')
+print(f'Vector 2 : {b}\n')
+print(f'Addition of two vectors : {a + b}')
+print(f'Subraction of two vectors : {a - b}')
+print(f'Multiplication of two vectors : {a * b}')
+print(f'Divisiom of two vectors : {a / b}\n')
+
+print("Vector Dot product")
+d = a.dot(b)
+print(f'Vector dot product of two vectors : {d}\n')
+
+print("Vector Scalar multiplication")
+scalar = 5
+scal_mul = scalar * a
+print(scal_mul,end="\n")
+
+
