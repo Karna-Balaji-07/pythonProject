@@ -1,0 +1,10 @@
+ Adding values at the end of the array is a necessary task especially when the data is not fixed and is prone to change. For this task, we can use numpy.append() and numpy.concatenate(). This function can help us to append a single value as well as multiple values at the end of the array
+
+ Ways to append values to the end of the array using numpy :
+ >> appending a single value to 1-D array
+ >> appending another another to 1-D arry
+ >> appending values at the end using concatenate
+ >> appending with a different array type
+ >> appending using list comprehension and concatenate
+ >> appending values at the end of N-Dimensional arrays
+

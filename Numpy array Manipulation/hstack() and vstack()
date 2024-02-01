@@ -1,0 +1,20 @@
+numpy.hstack() function is used to stack the sequence of input arrays horizontally (i.e. column wise) to make a single array.
+
+Syntax : numpy.hstack(tup)
+
+Parameters :
+tup : [sequence of ndarrays] Tuple containing arrays to be stacked. The arrays must have the same shape along all but the second axis.
+
+Return : [stacked ndarray] The stacked array of the input arrays.
+
+
+
+numpy.vstack() function is used to stack the sequence of input arrays vertically to make a single array.
+
+Syntax : numpy.vstack(tup)
+
+Parameters :
+tup : [sequence of ndarrays] Tuple containing arrays to be stacked. The arrays must have the same shape along all but the first axis.
+
+Return : [stacked ndarray] The stacked array of the input arrays.
+

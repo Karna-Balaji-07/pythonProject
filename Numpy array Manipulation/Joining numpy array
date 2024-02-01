@@ -1,0 +1,8 @@
+Numpy provides various functions to combine arrays. Few of them are :
+ >> np.concatenate
+ >> np.stack
+ >> np.block
+
+ np.concatenate() : the concatenate function joins two or more arrays along the specified axis
+ by default the value of axis is set to 0. we can change it to 1 if we want to join arrays along the row
+

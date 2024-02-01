@@ -1,0 +1,5 @@
+There are various ways to copies in numpy array :
+>> using np.copy() function
+>> Copy given 2d array into another array
+>> using assignment array
+

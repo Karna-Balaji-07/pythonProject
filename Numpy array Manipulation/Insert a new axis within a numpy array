@@ -1,0 +1,13 @@
+NumPy provides us with two different built-in functions to increase the dimension of an array i.e.,
+
+1D array will become 2D array
+2D array will become 3D array
+3D array will become 4D array
+4D array will become 5D array
+
+There are various ways to add a new axis to a numpy array :
+>> using np.newaxis()
+>> using np.expand_dims()
+>> Simultaneous insert many axes in the array
+>> using numpy.reshape()
+

@@ -1,0 +1,6 @@
+Approach to swap columns in an array using numnpy
+
+>> import numpy module and create a numpy array
+>> swap the column with index
+>> print the final array
+

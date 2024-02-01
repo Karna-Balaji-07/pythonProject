@@ -1,0 +1,3 @@
+Comparing two NumPy arrays determines whether they are equivalent by checking if every element at each corresponding index is the same.
+
+method one : == relational operator
