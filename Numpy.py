@@ -1,5 +1,7 @@
 import numpy as np  # numerical python
+import time
 
+start = time.time()
 x = np.array(([1],[2],[3]))
 y = np.array(([6],[7],[8]))
 print(x.shape)
@@ -77,3 +79,6 @@ cos_inverse = np.arccos(cos_thetta)
 print(cos_inverse)
 degree = cos_inverse * ((180)/np.pi)
 print(degree)
+
+end = time.time()
+print(f'Execution Time: {(end-start)*100**2 : .03f}ms ')
