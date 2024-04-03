@@ -1,8 +1,0 @@
-we can create arrays by either using lists, array library or numpy library
-
-np.zeros(size,dtype) - array with the given size and dtype with 0 as its elements
-np.empty(size,dtype) - array with the given size and dtype with random values as its elements
-np.arange(9) will create an array of elements till 9
-np.reshape(2,3) reshapes the array to the specified size
-
-
